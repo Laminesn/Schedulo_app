@@ -1,0 +1,9 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+/copilot/chatSessions
+/misc.xml
+/deploymentTargetDropDown.xml
+/compiler.xml
+/gradle.xml

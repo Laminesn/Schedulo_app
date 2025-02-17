@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.courseSearch">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_view"
+        />
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_margin="16dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="12dp"
+        android:hint="Search..."
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar">
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/course_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/credit_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cr"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/instructor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Days"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 1201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Intro to Aero"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="01"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Jha"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="M"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1400-1450"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 1201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Intro to Aero"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="02"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Jha"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="M"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1400-1450"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 1201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Intro to Aero"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="03"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Jha"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="M"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1400-1450"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 1201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Intro to Aero"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="04"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Jha"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="M"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1400-1450"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 1201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Intro to Aero"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="05"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Jha"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="M"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1400-1450"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 2201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Aero Fund"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="01"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TBA"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TR"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1100-1215"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/course_name8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="AEE 2201"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/course_code8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Aero Fund"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/credit_hours8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="02"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/instructor8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TBA"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/days8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="TR"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/times8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1100-1215"
+                android:textSize="10dp"/>
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="Home"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_back"
+            android:background="@android:color/transparent"
+            android:drawablePadding="12dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

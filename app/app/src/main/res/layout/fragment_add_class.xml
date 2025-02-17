@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.addClass">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_view" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="Back"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_back"
+            android:drawablePadding="12dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Course Information"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_below="@+id/view"
+        android:paddingStart="5dp"/>
+
+    <View
+        android:id="@+id/viewAfter"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#ACA1A1"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/Title"
+        android:layout_marginBottom="20dp"/>
+
+    <TableLayout
+        android:id="@+id/course_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewAfter"
+        android:stretchColumns="1"
+        android:padding="5dp"
+        >
+
+        <TableRow
+            android:background="@color/black">
+
+            <TextView
+                android:text="CRN"
+                android:textStyle="bold"
+                android:background="@color/white"
+
+
+            />
+            <TextView
+                android:id="@+id/crn_text"
+                android:text="84526"
+                android:paddingStart="5dp"
+                android:background="@color/white"
+             />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Course"
+                android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/description_id_text"
+                android:text="AEE 1201"
+                android:paddingStart="5dp"
+             />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Section"
+                android:textStyle="bold"
+             />
+            <TextView
+                android:id="@+id/section_text"
+                android:paddingStart="5dp"
+                android:text="01"
+             />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Credit Hours"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/credit_text"
+                android:paddingStart="5dp"
+                android:text="1"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Days"
+                android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/days_text"
+                android:paddingStart="5dp"
+                android:text="Monday"
+            />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Times"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/times_text"
+                android:paddingStart="5dp"
+                android:text="02:00 PM - 02:50 PM"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Location"
+                android:textStyle="bold"
+             />
+            <TextView
+                android:id="@+id/location_text"
+                android:paddingStart="5dp"
+                android:text="410GLE 107"
+            />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Instructor"
+                android:textStyle="bold"
+             />
+            <TextView
+                android:id="@+id/instructor_text"
+                android:paddingStart="5dp"
+                android:text="Dr. John Doe"
+             />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add_class_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_table"
+        android:layout_gravity="center"
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:text="Add Class"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

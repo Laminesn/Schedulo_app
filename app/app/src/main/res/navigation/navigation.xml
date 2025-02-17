@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main">
+    <fragment
+        android:id="@+id/main"
+        android:name="edu.fit.schedulo.app.UI.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_courseSearch"
+            app:destination="@id/courseSearch" />
+        <action
+            android:id="@+id/action_main_to_moodReport"
+            app:destination="@id/moodReport" />
+        <action
+            android:id="@+id/action_main_to_addActivity"
+            app:destination="@id/addActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseSearch"
+        android:name="edu.fit.schedulo.app.UI.courseSearch"
+        android:label="fragment_course_search"
+        tools:layout="@layout/fragment_course_search" >
+        <action
+            android:id="@+id/action_courseSearch_to_addClass"
+            app:destination="@id/addClass" />
+        <action
+            android:id="@+id/action_courseSearch_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/moodReport"
+        android:name="edu.fit.schedulo.app.UI.MoodReportUI"
+        android:label="fragment_mood_report"
+        tools:layout="@layout/fragment_mood_report" >
+        <action
+            android:id="@+id/action_moodReport_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/addActivity"
+        android:name="edu.fit.schedulo.app.UI.AddActivity"
+        android:label="fragment_add_activity"
+        tools:layout="@layout/fragment_add_activity" >
+        <action
+            android:id="@+id/action_addActivity_to_addActivityEvent"
+            app:destination="@id/addActivityEvent" />
+        <action
+            android:id="@+id/action_addActivity_to_addCourseEvent"
+            app:destination="@id/addCourseEvent" />
+    </fragment>
+    <fragment
+        android:id="@+id/addClass"
+        android:name="edu.fit.schedulo.app.UI.addClass"
+        android:label="fragment_add_class"
+        tools:layout="@layout/fragment_add_class" >
+        <action
+            android:id="@+id/action_addClass_to_courseSearch"
+            app:destination="@id/courseSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/addActivityEvent"
+        android:name="edu.fit.schedulo.app.UI.AddActivityEvent"
+        android:label="fragment_add_activity_event"
+        tools:layout="@layout/fragment_add_activity_event" >
+        <action
+            android:id="@+id/action_addActivityEvent_to_addActivity"
+            app:destination="@id/addActivity" />
+        <action
+            android:id="@+id/action_addActivityEvent_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCourseEvent"
+        android:name="edu.fit.schedulo.app.UI.AddCourseEvent"
+        android:label="fragment_add_course_event"
+        tools:layout="@layout/fragment_add_course_event" >
+        <action
+            android:id="@+id/action_addCourseEvent_to_addActivity"
+            app:destination="@id/addActivity" />
+        <action
+            android:id="@+id/action_addCourseEvent_to_main"
+            app:destination="@id/main" />
+    </fragment>
+</navigation>
